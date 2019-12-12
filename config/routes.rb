@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-   root to: "home#index"
-   devise_for :users, defaults: { format: :json }, controllers: {
-        sessions: 'users/sessions'
-    }
+  root to: 'home#index'
+  devise_for :users, defaults: { format: :json }, controllers: {
+    sessions: 'users/sessions'
+  }
 end
